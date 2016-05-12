@@ -9,9 +9,10 @@ $brand-primary: lighten( #733966, 0% );
 @import "bourbon/bourbon";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
-@import url(https://fonts.googleapis.com/css?family=Bevan);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
+// @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
+// @import url(https://fonts.googleapis.com/css?family=Bevan);
+// @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic);
 // @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
 html { 
@@ -20,7 +21,7 @@ html {
 
 body {
 	// display: none;
-
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 /**
@@ -30,14 +31,19 @@ body {
  */
 .action-bar {
 	// border: 2px solid red;
-	min-height: 1rem;
+	min-height: 2rem;
 	background-color: $brand-primary;
 	// display: none;
 
 	.social-right {
 		.top-nav-social {
+			padding-right: 2rem;
 			li {
 				display: inline-block;
+				a {
+					color: white;
+					padding-right: 1rem;
+				}
 			}
 		}
 	}
@@ -51,7 +57,31 @@ body {
 	// min-height: 500px;
 
 	// padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-bottom: 3rem;
+
+	#site-navigation {
+
+		// border: 1rem solid red;
+
+		#ubermenu-nav-main-2 {
+			@media ( max-width: 959px ) {
+				background-color: rgba( gray, .5 ) !important;
+			} 
+		}
+		.ubermenu-item {
+
+		}
+		.ubermenu-target-title.ubermenu-target-text {
+			font-size: 2rem;
+			font-weight: 300;
+
+			// &:after {
+			// 	content: "|";
+			// 	padding-left: 2rem;
+			// }
+		
+		}
+	}
 
 	.site-branding {
 		.logo {
@@ -64,18 +94,28 @@ body {
 	}
 
 	.masthead-stripe-block {
-		min-height: 400px;
+		min-height: 390px;
 		background-image: url("/wp-content/uploads/2016/05/PERFECT-Stripes-horizontal-white-black.png");
+		border-bottom: 1rem solid black;	
+
+		figure {
+			padding-top: 3rem;
+		}	
 	}
 }
 
 .top-form-bar {
-	// @include background(linear-gradient( white, $charcoal ) left repeat);
+	// @include background(linear-gradient( white, black ) left repeat);
 	background-color: black;
+	padding-bottom: 2rem;
 
 	.form-bar-left-text {
-		font-size: 2rem;
+		font-size: 2.5rem;
 		color: white;
+		padding-top: 1rem;
+	}
+	.form-bar-right-form-holder {
+		margin-top: 2rem;
 	}
 }
 

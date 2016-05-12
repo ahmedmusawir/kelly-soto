@@ -68,44 +68,34 @@
 
 				<div class="img-holder">
 					
-					<figure class="col-md-2 col-sm-2 col-xs-6">
-						<img class="img-responsive" src="http://lorempixel.com/200/450/nature/1" alt="">
+					<figure class="col-md-2 col-sm-4 col-xs-6">
+						<img class="img-responsive" src="http://lorempixel.com/g/200/390/nature/1" alt="">
 					</figure>
 					
-					<figure class="col-md-2 col-sm-2 col-xs-6">
-						<img class="img-responsive" src="http://lorempixel.com/200/450/nature/2" alt="">
+					<figure class="col-md-2 col-sm-4 col-xs-6">
+						<img class="img-responsive" src="http://lorempixel.com/g/200/350/nature/2" alt="">
 						
 					</figure>
 																			
-					<figure class="col-md-2 col-sm-2 col-xs-6">
-						<img class="img-responsive" src="http://lorempixel.com/200/450/nature/3" alt="">
+					<figure class="col-md-2 col-sm-4 col-xs-6">
+						<img class="img-responsive" src="http://lorempixel.com/g/200/390/nature/3" alt="">
 						
 					</figure>
 					
-					<figure class="col-md-2 col-sm-2 col-xs-6">
-						<img class="img-responsive" src="http://lorempixel.com/200/450/nature/4" alt="">
+					<figure class="col-md-2 col-sm-4 col-xs-6">
+						<img class="img-responsive" src="http://lorempixel.com/g/200/350/nature/4" alt="">
 						
 					</figure>		
 
-					<figure class="col-md-2 col-sm-2 col-xs-6">
-						<img class="img-responsive" src="http://lorempixel.com/200/450/nature/5" alt="">
+					<figure class="col-md-2 col-sm-4 col-xs-6">
+						<img class="img-responsive" src="http://lorempixel.com/g/200/390/nature/5" alt="">
 						
 					</figure>		
 					
-					<figure class="col-md-2 col-sm-2 col-xs-6">
-						<img class="img-responsive" src="http://lorempixel.com/200/450/nature/6" alt="">
+					<figure class="col-md-2 col-sm-4 col-xs-6">
+						<img class="img-responsive" src="http://lorempixel.com/g/200/350/nature/6" alt="">
 						
 					</figure>		
-
-					<!-- <figure class="col-md-2">
-						
-					</figure>
-					<figure class="col-md-1">
-						
-					</figure>
-					<figure class="col-md-3">
-						
-					</figure>		 -->																										
 
 				</div>
 
@@ -128,15 +118,15 @@
 							
 							<form class="form-inline" role="form">
 								<div class="form-group">
-								    <label for="email">Email address:</label><br />
-								    <input type="email" class="form-control" id="email">
+								    <!-- <label for="email">Email address:</label><br /> -->
+								    <input type="email" class="form-control" id="email" placeholder="Name:">
 								</div>
 								<div class="form-group">
-								    <label for="pwd">Password:</label><br />
-								    <input type="password" class="form-control" id="pwd">
+								    <!-- <label for="pwd">Password:</label><br /> -->
+								    <input type="password" class="form-control" id="pwd" placeholder="Email:">
 								</div>
 							
-								  <button type="submit" class="btn btn-default">Submit</button><br />
+								  <button id="submit" type="submit" class="btn btn-default">Submit</button><br />
 							</form>
 
 						</div>

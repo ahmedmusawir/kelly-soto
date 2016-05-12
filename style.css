@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: MooseFrame For The Code Help Site
+Theme Name: MooseFrame For Kelly Soto
 Theme URI: http://www.htmlfivedev.com
 Description: This is the one reworked for Code Help Site with Uber based menu.
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, post-formats, responsive-layout, theme-options, translation-ready
@@ -18,9 +18,7 @@ If you want to add your own css code, please do it in /css/custom.css
 -------------------------------------------------------------- */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
-@import url(https://fonts.googleapis.com/css?family=Bevan);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic);
 .alignnone {
   margin: 5px 20px 20px 0; }
 
@@ -5925,31 +5923,52 @@ button.close {
 html {
   margin-top: 32px !important; }
 
+body {
+  font-family: 'Josefin Sans', sans-serif; }
+
 /**
  *
  * Action Bar above the header
  *
  */
 .action-bar {
-  min-height: 1rem;
+  min-height: 2rem;
   background-color: #733966; }
-  .action-bar .social-right .top-nav-social li {
-    display: inline-block; }
+  .action-bar .social-right .top-nav-social {
+    padding-right: 2rem; }
+    .action-bar .social-right .top-nav-social li {
+      display: inline-block; }
+      .action-bar .social-right .top-nav-social li a {
+        color: white;
+        padding-right: 1rem; }
 
 #masthead {
   background-image: url("/wp-content/uploads/2016/05/soto-bg-block-1.jpg");
-  padding-bottom: 5rem; }
+  padding-bottom: 3rem; }
+  @media (max-width: 959px) {
+    #masthead #site-navigation #ubermenu-nav-main-2 {
+      background-color: rgba(128, 128, 128, 0.5) !important; } }
+  #masthead #site-navigation .ubermenu-target-title.ubermenu-target-text {
+    font-size: 2rem;
+    font-weight: 300; }
   #masthead .site-branding .logo a img {
     width: 50%; }
   #masthead .masthead-stripe-block {
-    min-height: 400px;
-    background-image: url("/wp-content/uploads/2016/05/PERFECT-Stripes-horizontal-white-black.png"); }
+    min-height: 390px;
+    background-image: url("/wp-content/uploads/2016/05/PERFECT-Stripes-horizontal-white-black.png");
+    border-bottom: 1rem solid black; }
+    #masthead .masthead-stripe-block figure {
+      padding-top: 3rem; }
 
 .top-form-bar {
-  background-color: black; }
+  background-color: black;
+  padding-bottom: 2rem; }
   .top-form-bar .form-bar-left-text {
-    font-size: 2rem;
-    color: white; }
+    font-size: 2.5rem;
+    color: white;
+    padding-top: 1rem; }
+  .top-form-bar .form-bar-right-form-holder {
+    margin-top: 2rem; }
 
 /**
  *
