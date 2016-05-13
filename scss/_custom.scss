@@ -66,9 +66,44 @@ body {
 		padding-top: 2rem;
 
 		#ubermenu-nav-main-2 {
-			@media ( max-width: 959px ) {
+			@media ( max-width: 767px ) {
 				background-color: rgba( gray, .5 ) !important;
-			} 
+				// color: white;
+			}
+
+			.ubermenu-has-submenu-drop.ubermenu-has-submenu-flyout {
+
+					.ubermenu-submenu {
+
+						li {
+							a {
+								// border: 1px solid red;
+								span {
+									color: $gray-light !important;
+
+								}
+
+							}
+						}
+
+					} 
+				
+			}
+		}
+
+		#ubermenu-main-2-toggle-sticky-wrapper {
+	
+			// border: 1px solid red;
+			text-align: center;
+
+			a {
+				font-size: 2.5rem !important;
+				padding-bottom: 4rem;
+			}
+
+			.ubermenu-responsive-toggle:hover {
+				background-color: white !important;
+			}	
 		}
 
 		.ubermenu-current-menu-item.ubermenu-current_page_item {
@@ -106,16 +141,58 @@ body {
 
 		}
 
+		.ubermenu-sticky-full-width.ubermenu-sticky {
+
+			.ubermenu-current-menu-item.ubermenu-current_page_item {
+				border-top: 3px solid white;
+
+			}
+
+			.ubermenu-item:hover {
+
+				i {
+					color: darken( white, 20% );
+				}
+			}	
+
+			li {
+				a {
+					color: darken( white, 20% );
+
+
+					&:hover {
+						color: white;
+					}
+					.ubermenu-target-title.ubermenu-target-text {
+					
+						font-size: 2.3rem;
+						font-weight: 300;
+						color: darken( white, 20% )  !important;
+						// color: $gray-lighter !important;
+					}	
+					.ubermenu-target-text {
+					
+						font-size: 2.3rem;
+						font-weight: 300;
+						color: darken( white, 20% ) !important;
+						// color: $gray-lighter !important;
+					}											
+				}
+			}
+
+		}
+
 	}
 
 	.site-branding {
 		.logo {
 
 			// float: left;
+			text-align: center;
 
 			a {
 				img {
-					width: 70%;
+					width: 90%;
 				}
 			}
 		}
@@ -412,11 +489,11 @@ img {
 		padding-right: 1rem;
 		padding-top: 1.4rem;
 		// padding-bottom: 0rem;
-		background-color: rgba( darken( $steel, 10% ), .85);
+		background-color: rgba( darken( $charcoal, 20% ), 1);
 
 
 		a {
-			color: lighten( $brand-primary, 10% );
+			color: lighten( $brand-primary, 30% );
 		}
 	}
 
@@ -443,46 +520,51 @@ img {
  * Page Styles
  *
  */
-.page-header-container {
+.page-style {
+	// border: 1rem solid red;
+
+} 
+
+// .page-header-container {
 	
-	background-color: rgba( darken( $gray-light, 0% ), .5);
-	// border: 2px solid red;
+// 	// background-color: rgba( darken( $gray-light, 0% ), .5);
+// 	// border: 2px solid red;
 
-	.page-header {
+// 	// .page-header {
 
-		padding-top: 3rem;
-		padding-bottom: 3rem;
+// 	// 	padding-top: 3rem;
+// 	// 	padding-bottom: 3rem;
 
 
-		h1 {
-			font-family: 'Bevan', cursive;
-			font-variant: small-caps;
-			font-size: 6rem;
-			color: darken( $gray-lighter, 10% );
-		}
-	}
-	/**
-	 *
-	 * Non Broken Line Handling
-	 *
-	 */
+// 	// 	h1 {
+// 	// 		font-family: 'Bevan', cursive;
+// 	// 		font-variant: small-caps;
+// 	// 		font-size: 6rem;
+// 	// 		color: darken( $gray-lighter, 10% );
+// 	// 	}
+// 	// }
+// 	/**
+// 	 *
+// 	 * Non Broken Line Handling
+// 	 *
+// 	 */
 	
-	/* These are technically the same, but use both */
-	  overflow-wrap: break-word;
-	  word-wrap: break-word;
+// 	/* These are technically the same, but use both */
+// 	  overflow-wrap: break-word;
+// 	  word-wrap: break-word;
 
-	  -ms-word-break: break-all;
-	  /* This is the dangerous one in WebKit, as it breaks things wherever */
-	  word-break: break-all;
-	  /* Instead use this non-standard one: */
-	  word-break: break-word;
+// 	  -ms-word-break: break-all;
+// 	  /* This is the dangerous one in WebKit, as it breaks things wherever */
+// 	  word-break: break-all;
+// 	  /* Instead use this non-standard one: */
+// 	  word-break: break-word;
 
-	  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-	  -ms-hyphens: auto;
-	  -moz-hyphens: auto;
-	  -webkit-hyphens: auto;
-	  hyphens: auto;    
-}
+// 	  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+// 	  -ms-hyphens: auto;
+// 	  -moz-hyphens: auto;
+// 	  -webkit-hyphens: auto;
+// 	  hyphens: auto;    
+// }
 
 /**
  *
@@ -538,34 +620,31 @@ img {
 
 
 		}
-		.posted-on {
+		.posted-on, .byline {
 			color: $brand-primary;
 		}
 	}
 
 	.featured-img {
-		padding-bottom: 2rem;
-		
+		overflow: hidden;
+		max-width: 80%;
+
 		img {
 			@include transition(all 1.0s ease-in-out);
 
 			&:hover {
 				@include transform(translateY(0px));
-				@include transform(scale(0.9) rotate(0deg));
+				@include transform(scale(1.1) rotate( 0deg ));
 				@include transform-origin(center top);
 				@include transform-style(preserve-3d);
 				opacity: .5;
 			}
 		}
 
-		.for-spanish {
-			margin-top: 3.5rem;
-		}
-
 	}
 
 	.entry-content {
-		// border: 1px solid yellow;
+
 		th {
 			min-width: 120px;
 		}
@@ -574,11 +653,35 @@ img {
 	.only-text {
 		margin-left: 1.3rem;
 		margin-right: 1.4rem;
+		padding-top: 3rem;
+		font-size: 1.6rem;
+		padding-right: 5rem;
+		padding-left: 5rem;
+		color: gray;
+
+		@media ( max-width: 650px ) {
+			padding-right: 1rem;
+			padding-left: 1rem;
+		}
 	}
 
 	.entry-footer {
 		padding-bottom: 2rem;
 		padding-top: 2rem;
+	
+		.cat-links {
+
+			a {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}			
+		}
+		.comments-link {
+			padding-left: 1rem;
+		}
+		.edit-link {
+			padding-left: 1rem;
+		}
 	}
 
 	.moretag {
@@ -586,8 +689,9 @@ img {
 		margin: 0 auto;
 		clear: both;
 		margin-top: 3rem;
-		width: 15rem;
+		width: 20rem;
 	}
+
 
 	/**
 	 *
@@ -637,6 +741,37 @@ img {
 	margin-right: 0.5em;
 }
 
+/**
+ *
+ * Single Post Style
+ *
+ */
+.single-post-content {
+	
+	.featured-img {
+		// border: 1rem solid red;
+		margin-bottom: 4rem;
+		margin-top: 1rem;
+	}
+	.entry-footer {
+		padding-bottom: 2rem;
+		padding-top: 2rem;
+	
+		.cat-links {
+
+			a {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}			
+		}
+		.comments-link {
+			padding-left: 1rem;
+		}
+		.edit-link {
+			padding-left: 1rem;
+		}
+	}	
+}
 
 /**
  *
@@ -787,61 +922,6 @@ img {
   -webkit-hyphens: auto;
   hyphens: auto;    
 }
-
-/**
- *
- * Land & Property Single Page Style
- *	content-land-page.php
- *	content-property-page
- */
-
-.single-details {
-	// border: 3px solid dodgerblue;
-	padding-bottom: 3rem;
-	padding-top: 3rem;
-	background-color: rgba( lighten( $steel, 30% ), .8 );
-	font-size: 2rem;
-	color: darken( $gray-light, 10% );
-	h2 {
-		font-family: 'Bevan', cursive;
-		font-variant: small-caps;
-		padding-bottom: 2rem;
-		
-	}
-
-}
-.single-description {
-	// border: 3px solid yellow;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-
-	background-color: rgba( $smoke, .8 );
-	font-size: 1.8rem;
-	color: lighten( $gray, 5% );
-
-	h2 {
-		font-family: 'Bevan', cursive;
-		font-variant: small-caps;
-		padding-bottom: 2rem;
-		color: lighten( $gray, 10% );
-
-	}
-
-	p {
-		padding-left: 2rem;
-		padding-right: 2rem;
-	}
-}
-.single-map {
-	border: 3px solid lighten( black, 25% );
-	padding-bottom: 3rem;
-	background-color: rgba( darken( $charcoal, 10% ), .4 );
-	padding-top: 3rem;
-	font-size: 2rem;
-}
-
-
-
 
 
 /**
@@ -1188,7 +1268,9 @@ ol.children { list-style-type: none; }
 }
                 
 
-
+#recentcomments {
+	color: white;
+}
 
 
 
