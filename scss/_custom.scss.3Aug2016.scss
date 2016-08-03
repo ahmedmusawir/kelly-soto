@@ -131,25 +131,12 @@ body {
 				}
 			}
 
-			@media ( min-width: 992px ) and ( max-width: 1190px ) {
-
-				margin-left: 0rem !important;
-				margin-right: -1rem !important;
-
-			}			
-					// border: 1px solid red;
-
 
 			.ubermenu-target-title.ubermenu-target-text {
 			
-				// font-size: 4.3rem;
 				font-size: 2.3rem;
 				font-weight: 300;
 				color: $brand-primary !important;
-
-				@media ( min-width: 992px ) and ( max-width: 1190px ) {
-					font-size: 1.7rem;
-				}
 			}			
 
 		}
@@ -248,6 +235,94 @@ body {
 	}
 }
 
+/**
+ *
+ * This code helps with the in-between 991 and 768px
+ *
+ */
+
+// @media (min-width: 768px) and (max-width: 991px) {
+//     .navbar-collapse.collapse {
+//         display: none !important;
+//     }
+//     .navbar-collapse.collapse.in {
+//         display: block !important;
+//     }
+//     .navbar-header .collapse, .navbar-toggle {
+//         display:block !important;
+//     }
+//     .navbar-header {
+//         float:none;
+//     }
+// }
+
+// .navbar {
+// 	background-color: darken( rgba( $steel, .80 ), 5% );
+// 	box-shadow: 5px 5px 8px $gray;
+// 	border-bottom: 1px solid $gray;
+
+// 	.navbar-brand {
+// 		color: darken( $gray-lighter, 10% );
+// 		font-size: 2rem;
+// 		font-weight: 300;
+// 	}
+
+	
+
+// 	.dropdown-menu {
+// 			background-color: #101010;
+
+// 			.current-menu-item {
+// 				a {
+// 					color: white;
+// 				}
+
+// 			}
+
+// 			li {
+
+// 				a {
+// 					color: darken( $gray-lighter, 10% );
+
+// 					&:hover {
+// 						background-color: lighten( $oil, 10% );
+							
+// 					}
+// 				}
+// 			}
+
+// 	}
+
+// 	#menu-menu-1 {
+
+// 		li {
+
+// 			&:hover {
+// 				background-color: lighten( $oil, 10% );
+// 			}
+// 			a {
+// 				color: darken( $gray-lighter, 10% );
+// 				font-size: 1.5rem;
+// 				font-weight: 300;
+// 			}
+// 		}
+
+// 		.current-menu-item {
+// 			background-color: lighten( $oil, 10% );
+// 			// border: 1px solid yellow;
+
+// 			a {
+// 				background-color: lighten( $oil, 10% );
+
+// 				&:hover {
+// 					background-color: lighten( $oil, 10% );
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+
 
 img {
     max-width: 100%;
@@ -268,6 +343,106 @@ img {
         margin-top: 46px;
     }
 }
+
+
+
+/**
+ *
+ * Navigation For UnderScore Only
+ *
+ */
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+// .main-navigation {
+	//     position: relative;
+	//     float: left;
+	//     width: 100%;
+	//     display: block;
+	//     clear: both;
+	//     font-family: 'Lato', sans-serif;
+	//     text-transform: uppercase;
+	//     background: #313131;
+	//     background: hsl(0, 0%, 19%);
+	// }
+	// .main-navigation ul {
+	//     list-style: none;
+	//     margin: 0;
+	//     padding-left: 0;
+	// }
+	// .main-navigation li {
+	//     float: left;
+	//     position: relative;
+	// }
+	// .main-navigation a {
+	//     display: block;
+	//     padding: 1.3em 1em;
+	//     font-size: 14px;
+	//     font-size: 1.4rem;
+	//     text-decoration: none;
+	//     line-height: 1.3em;
+	//     color: white;
+	//     color: hsl(0, 0%, 100%);
+	// }
+	// .main-navigation ul ul {
+	//     position: absolute;
+	//     left: 0;
+	//     z-index: 99999;
+	//     display: none;
+	//     float: left;
+	//     padding: 0;
+	//     background: #4d4d4d;
+	//     background: hsl(0, 0%, 30%);
+	// }
+	// .main-navigation ul ul ul {
+	//     left: 100%;
+	//     top: 0;
+	// }
+	// .main-navigation ul ul a {
+	//     width: 200px;
+	// }
+	// .main-navigation ul ul li {
+	// }
+	// .main-navigation li:hover > a {
+	//     color: #fff;
+	//     color: hsl(0, 0%, 100%);
+	//     background: #4d4d4d;
+	//     background: hsl(0, 0%, 30%);
+	// }
+	// .main-navigation ul ul :hover > a {
+	// }
+	// .main-navigation ul ul a:hover {
+	//     background: #313131;
+	//     background: hsl(0, 0%, 19%);
+	// }
+	// .main-navigation ul li:hover > ul {
+	//     display: block;
+	// }
+	// .main-navigation .current_page_item > a,
+	// .main-navigation .current-menu-item > a,
+	// .main-navigation .current_page_item > a:hover,
+	// .main-navigation .current-menu-item > a:hover {
+	//     background: darken( $brand-primary, 10% );
+	//     // background: white;
+	//     color: yellow;
+	//     // color: #313131;
+	//     // color: hsl(0, 0%, 19%);
+	// }
+
+	// .main-navigation .current_page_ancestor {
+	//     background: #4d4d4d;
+	//     background: hsl(0, 0%, 30%);
+	// }
+
+	// .main-navigation ul ul .current_page_parent,
+	// .main-navigation .current_page_parent .current_page_item > a {
+	//     color: #fff;
+	//     color: hsl(0, 0%, 100%);
+	//     background: #313131;
+	//     background: hsl(0, 0%, 19%);
+// } 
+    
 
 
 /**

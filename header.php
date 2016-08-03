@@ -64,44 +64,46 @@
 
 			</section>
 
+<!-- <section class="frontpage-index-block  wow zoomIn" data-wow-duration="1s" data-wow-delay="0s"> -->
+
 			<aside class="masthead-stripe-block container-fluid">
 
 				<div class="img-holder ">
 					
-					<figure class="col-md-2 col-sm-3 col-xs-4">
-						<img class="img-responsive" src="/wp-content/uploads/2016/05/model-390-1.jpg" alt="">
+					<figure class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+						<img class="img-responsive wow zoomIn" src="/wp-content/uploads/2016/06/img-1.jpg" alt="" data-wow-duration="1s" data-wow-delay="0s">
 						<!-- <img class="img-responsive" src="http://lorempixel.com/g/200/390/nature/1" alt=""> -->
 					</figure>
 					
-					<figure class="col-md-2 col-sm-3 col-xs-4">
-						<img class="img-responsive" src="/wp-content/uploads/2016/05/model-350-1.jpg" alt="">
+					<figure class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+						<img class="img-responsive wow zoomIn" src="/wp-content/uploads/2016/06/img-2.jpg" alt="" data-wow-duration="1s" data-wow-delay="0.5s">
 						<!-- <img class="img-responsive" src="http://lorempixel.com/g/200/350/nature/2" alt=""> -->
 						
 					</figure>
 																			
-					<figure class="col-md-2 col-sm-3 col-xs-4">
-						<img class="img-responsive" src="/wp-content/uploads/2016/05/model-390-2.jpg" alt="">
+					<figure class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+						<img class="img-responsive wow zoomIn" src="/wp-content/uploads/2016/06/img-3.jpg" alt="" data-wow-duration="1s" data-wow-delay="1s">
 						<!-- <img class="img-responsive" src="http://lorempixel.com/g/200/390/nature/3" alt=""> -->
 						
 					</figure>
 					
-					<figure class="col-md-2 col-sm-3 col-xs-4 hidden-xs">
-						<img class="img-responsive" src="/wp-content/uploads/2016/05/model-350-2.jpg" alt="">
+					<figure class="col-lg-3 col-md-3 col-sm-3 col-xs-4 hidden-xs">
+						<img class="img-responsive wow zoomIn" src="/wp-content/uploads/2016/06/img-4.jpg" alt="" data-wow-duration="1s" data-wow-delay="1.5s">
 						<!-- <img class="img-responsive" src="http://lorempixel.com/g/200/350/nature/4" alt=""> -->
 						
 					</figure>		
 
-					<figure class="col-md-2 col-sm-3 col-xs-4 hidden-sm hidden-xs">
-						<img class="img-responsive" src="/wp-content/uploads/2016/05/model-390-3.jpg" alt="">
+					<!-- <figure class="col-md-2 col-sm-3 col-xs-4 hidden-sm hidden-xs"> -->
+						<!-- <img class="img-responsive wow zoomIn" src="/wp-content/uploads/2016/05/model-390-3.jpg" alt="" data-wow-duration="1s" data-wow-delay="2s"> -->
 						<!-- <img class="img-responsive" src="http://lorempixel.com/g/200/390/nature/5" alt=""> -->
 						
-					</figure>		
+					<!-- </figure>		 -->
 					
-					<figure class="col-md-2 col-sm-3 col-xs-4 hidden-sm hidden-xs">
-						<img class="img-responsive" src="/wp-content/uploads/2016/05/model-350-3.jpg" alt="">
+					<!-- <figure class="col-md-2 col-sm-3 col-xs-4 hidden-sm hidden-xs"> -->
+						<!-- <img class="img-responsive wow zoomIn" src="/wp-content/uploads/2016/05/model-350-3.jpg" alt="" data-wow-duration="1s" data-wow-delay="2.5s"> -->
 						<!-- <img class="img-responsive" src="http://lorempixel.com/g/200/350/nature/6" alt=""> -->
 						
-					</figure>		
+					<!-- </figure>		 -->
 
 				</div>
 
